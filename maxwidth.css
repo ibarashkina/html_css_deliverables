@@ -1,0 +1,223 @@
+html {
+
+  background-color: #F0ECEE;
+    /* no repeat center fixed; */
+
+  /* width: 100%; */
+
+  }
+
+
+
+.container {
+
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("bulldog.jpg");
+  padding-top: 2%;
+  height: 90%;
+}
+
+  @media all and ( max-width: 450px ) {
+  .container {
+    background-image: none;
+    }
+}
+
+.header {
+ width: 100%;
+ height: 10%;
+}
+
+.logo {
+  display: inline-block;
+  float: left;
+  text-align: right;
+  width: 200px;
+  font-weight: 900;
+  padding-top: 20px;
+}
+
+@media all and ( max-width: 450px ){
+    .logo {
+        text-align:left;
+        padding-left: 10px;
+    }
+}
+
+.nav {
+  grid-area: nav;
+  text-align: right;
+  float: left;
+  width: 85%;
+}
+
+@media all and ( max-width: 450px ){
+    .nav{
+        text-align: left;
+    }
+}
+
+.nav ul {
+  margin-right: 5%;
+  margin-top: 3%;
+
+  display: inline-block;
+}
+
+@media all and ( max-width: 450px ){
+    .nav ul {
+        margin-left: -10%;
+    }
+}
+.nav ul li{
+  display: inline-flex;
+  
+}
+
+@media all and ( max-width: 450px ){
+    .nav ul li{
+        display:block;
+    }
+}
+
+.nav a {
+  color: #88898B;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+
+.nav a:hover{
+  text-decoration: none;
+  background-color: #CCC;
+  color: #FF4850;
+}
+
+
+.button {
+  background-color: #FF4850;
+  color: #F0ECEE !important;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+@media all and ( max-width: 450px ){
+    .button{
+        padding-right: 135px;
+        padding-left: 135px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+.button:hover{
+	color: #88898B !important;
+	background-color: #FF4850 !important;
+}
+
+.emph {
+ color: #FF4850;
+
+}
+
+body{
+font-family: 'Fira Sans', sans-serif;
+
+}
+
+.action {
+	font-weight: 900;
+	width: auto;
+	padding-top: 150px;
+	margin-left: 90px;
+}
+
+@media all and ( max-width: 450px ){
+    .action {
+        margin-left: 10px;
+        padding-top: 170px;
+    }
+}
+            
+.action p{
+     color: #88898B;
+	 font-weight: 600;
+}
+
+
+.find {
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 5px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ color: #F0ECEE;
+ background-color: #FF4850;
+}
+
+@media all and ( max-width: 450px ){
+    .find{
+        align-content: stretch;
+        padding-right: 132px;
+        padding-left: 132px;    
+    }
+}
+
+.find:hover{
+	color: #88898B;
+	background-color: #FF4850;
+}
+
+.findiv{
+	margin-top: 50px;
+    }
+
+/* code that is here will apply to any screen size */
+    
+@media screen and (min-width:320px) and (max-width:640px) {
+/* code that is here, until the first @media block, will apply to any screen size */
+#somethingorother {
+  width: 800px ;
+}
+    }
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
