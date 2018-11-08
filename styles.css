@@ -14,8 +14,13 @@ body{
 
 }
 
+li {
+  margin: 10px 0;
+}
+
 ul {
   list-style-type: none;
+  margin: 20px 0;
 }
 
 nav a {
@@ -25,10 +30,6 @@ nav a {
   font-size: 18px;
   font-weight: 300;
   border-radius: 5px;
-  padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
 }
 
 
